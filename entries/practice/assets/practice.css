@@ -1,0 +1,33 @@
+body {
+    background-color: gray;
+    border: 5px dotted white;
+}
+
+h1{
+    font-family: "Syne", sans-serif;
+    color: white;
+    font-size: 100px;
+    padding: 100px 50px 100px 50px;
+}
+
+p{
+    color: beige;
+}
+
+.test{
+    font: bold;
+    color:aqua;
+}
+
+.red{
+    color: red;
+}
+
+.entry{
+    display: block;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 600px;
+}

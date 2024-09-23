@@ -1,0 +1,23 @@
+body {
+    background-image: url(IMG_Background.jpeg);
+}
+
+h1{
+        font-size: xx-large;
+}
+
+h2{
+    padding-top: 20px;
+    color: white;
+}
+
+img.c {
+    vertical-align: text-bottom;
+  }
+  
+  p{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+margin-left: 60px;
+margin-right: 60px;
+}
