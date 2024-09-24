@@ -11,9 +11,62 @@ img.c {
     vertical-align: text-bottom;
   }
 
-  p{
-                color: rgb(0, 0, 0);
-                font-size: 40px;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
+
+  @keyframes typing {
+    from { width: 100% }
+    to { width: 0 }
+    
+}
+
+.container {
+  position: relative;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  font-style: italic;
+  font-size: 40px;
+}
+
+.typing {
+  position: absolute;
+  top: 20;
+  margin: 20;
+  z-index: -1;
+  text-align:center;
+}
+
+.hiders {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hiders p {
+  position: relative; 
+  clear: both; 
+  margin: 0;
+  float: right; 
+  width:0; 
+  background: white; 
+  animation: typing 2s steps(30, end);
+  animation-fill-mode: both;  
+}
+  
+.hiders p:nth-child(2) {
+  animation-delay: 2s;
+}
+.hiders p:nth-child(3) {
+  animation-delay: 4s;
+}
+.hiders p:nth-child(4) {
+  animation-delay: 6s;
+}
+.hiders p:nth-child(5) {
+  animation-delay: 8s;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
