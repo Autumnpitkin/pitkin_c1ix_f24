@@ -2,65 +2,246 @@ body {
     background-image: url(IMG_Background.jpeg);
 }
 
-h2{
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 2s ease infinite;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #baa6b8;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+img {
+  width: 350px; 
+  height: 450px;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.large {
+  width: 600px; 
+  }
+
+  h2{
     padding-top: 20px;
+    padding-bottom: 20px;
     color: white;
+    font-size: 40px;
 }
 
 img.c {
     vertical-align: text-bottom;
+    width: 50px;
+    height: 50px;
+    border: none;
   }
 
 
-  @keyframes typing {
-    from { width: 100% }
-    to { width: 0 }
-    
-}
+  .dela-gothic-one-regular {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-.container {
-  position: relative;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-  font-style: italic;
-  font-size: 40px;
-}
-
-.typing {
-  position: absolute;
-  top: 20;
-  margin: 20;
-  z-index: -1;
-  text-align:center;
-}
-
-.hiders {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.hiders p {
-  position: relative; 
-  clear: both; 
-  margin: 0;
-  float: right; 
-  width:0; 
-  background: white; 
-  animation: typing 2s steps(30, end);
-  animation-fill-mode: both;  
-}
+  .prompt-thin {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
   
-.hiders p:nth-child(2) {
-  animation-delay: 2s;
-}
-.hiders p:nth-child(3) {
-  animation-delay: 4s;
-}
-.hiders p:nth-child(4) {
-  animation-delay: 6s;
-}
-.hiders p:nth-child(5) {
-  animation-delay: 8s;
-}
+  .prompt-extralight {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .prompt-light {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .prompt-medium {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .prompt-semibold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .prompt-bold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .prompt-extrabold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .prompt-black {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .prompt-thin-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .prompt-extralight-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .prompt-light-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .prompt-regular-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .prompt-medium-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .prompt-semibold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .prompt-bold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .prompt-extrabold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .prompt-black-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }  
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; visibility: visible; }
+  }
+  
+  div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  p {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(200, end);
+    animation-iteration-count: 1;
+  
+    &:nth-child(1) {
+      animation-delay: 0s;
+    }
+  
+    &:nth-child(2) {
+      visibility: hidden;
+      animation-delay: 5s;
+      animation-fill-mode: forwards;
+    }
+
+    &:nth-child(3) {
+      visibility: hidden;
+      animation-delay: 10s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+
+
+
 
