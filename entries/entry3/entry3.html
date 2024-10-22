@@ -15,17 +15,27 @@
 </head>
 
 <body>
- <div style="background-color:#baa6b8);">
+ <div style="background-color:rgb(247, 242, 235);">
       <div class="zoom-in-out-box">CREATIVE TIME</div>
       
     <br>
 
-    <div style="background-color: rgb(63, 52, 62);">
+    <div style="background-color: rgb(75, 56, 105);">
         <h2 style="text-align: center;">
-         <img class="c" src="assets/IMG_566 copy 4.png" width="40" height="50"> ENTRY 3 <img class="c" src="assets/IMG_565 copy 4.png" width="40" height="40"></h2></div>
+          <a href="/Users/autumnpitkin/Desktop/pitkin_c1ix_f24.html/entries/entry2/entry2.html"> <img class="c" src="assets/IMG_566 copy 4.png" width="40" height="50"></a> ENTRY 3 <a href="/Users/autumnpitkin/Desktop/pitkin_c1ix_f24.html/entries/entry4/entry4.html"><img class="c" src="assets/IMG_565 copy 4.png" width="40" height="40"></a></h2></div>
     <br>
 
 <body>
+  <div class="marquee">
+    <div class="marquee--inner">
+      <span>
+        <div>My daily ritual of engaging in a creative hobby or craft brings joy and relaxation to my daily routine.&nbsp;</div>
+      </span>
+      <span>
+          <div>My daily ritual of engaging in a creative hobby or craft brings joy and relaxation to my daily routine.&nbsp;</div>
+        </span>
+    </div>
+  </div>
 <div class="image-container">
     <div class="row">
         <img src="assets/IMG_1541.JPG" alt="Drawing Image 1">
@@ -38,18 +48,30 @@
         <img src="assets/IMG_1546.JPG" alt="Prismacolor Markers Image">
     </div>
 </div>
-<div class="marquee">
-  <div class="marquee--inner">
-    <span>
-      <div>My daily ritual of engaging in a creative hobby or craft brings joy and relaxation to my daily routine.&nbsp;</div>
-    </span>
-    <span>
-        <div>My daily ritual of engaging in a creative hobby or craft brings joy and relaxation to my daily routine.&nbsp;</div>
-      </span>
-  </div>
-</div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 </html>

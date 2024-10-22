@@ -1,94 +1,82 @@
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 2s ease infinite;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 60px;
+  color: rgb(224, 113, 133);
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(252, 238, 236);
+}
+
+/*
+img {
+  width: 1200px; 
+  height: 800px;
+}
+  */
+
 h2{
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
     font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
-.zoom-in-out-box {
-    animation: zoom-in-zoom-out 2s ease infinite;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    font-size: 60px;
-    color:rgb(151, 97, 100);
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-@keyframes zoom-in-zoom-out {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.5, 1.5);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; 
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-}
-
-img {
-    width: 350px; 
-    height: 450px;
-    border: 2px solid #ffffff;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.large {
-    width: 600px; 
-    }
-
 
 img.c {
     vertical-align: text-bottom;
     width: 50px;
     height: 50px;
     border: none;
-    }
-  
-  p{
-    font-family: "Prompt", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 30px;
-    text-align: center;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+    max-width: 700px ; 
+  }
+
+  div {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color:rgb(151, 97, 100);
-    color: white;
-}
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 
 .dela-gothic-one-regular {
     font-family: "Dela Gothic One", sans-serif;
@@ -203,4 +191,55 @@ img.c {
     font-weight: 900;
     font-style: italic;
   }  
+  
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    outline: none;
+    background-color: rgb(224, 113, 133);
+    color: rgb(247, 242, 235);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
     
+  #myBtn:hover {
+    background-color: rgb(224, 113, 133);
+  }
+
+  .hover2{
+    text-align: center;
+    font-family: Dela Gothic One, sans-serif; 
+    font-weight: 300;
+    color:rgb(224, 113, 133);
+    font-size: 40px;
+    line-height: 2;
+}
+
+.hover2:hover{
+    color:rgb(255, 205, 118)
+}
+
+ /* Phone breakpoint */
+ @media (max-width: 768px) {
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .image-container{
+    width: auto;
+    max-height: 30%;
+  }
+ }
+
+img {
+  max-width: 100%;
+}
