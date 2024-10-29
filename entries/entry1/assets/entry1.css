@@ -1,8 +1,7 @@
 .zoom-in-out-box {
   animation: zoom-in-zoom-out 2s ease infinite;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 20px;
   font-size: 60px;
   color:rgb(255, 205, 118);
   font-family: "Dela Gothic One", sans-serif;
@@ -26,17 +25,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: "Dela Gothic One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: rgb(247, 242, 235);
 }
 
 .image-container {
@@ -278,5 +266,37 @@ img.c {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color:rgb(255, 205, 118);
+  }
 
 
