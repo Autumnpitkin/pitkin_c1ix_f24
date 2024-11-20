@@ -338,8 +338,7 @@ tbody td {
     --wheel-btn-diameter: 6vmin;
     --box-border-radius: 8px;
   }
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
-  /* Reset styles */
+  
   html, body {
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 200;
@@ -837,7 +836,8 @@ tbody td {
   .wheel__btn {
     width: var(--wheel-btn-diameter);
     height: var(--wheel-btn-diameter);
-    position: absolute;
+    position: relative;
+    left: 20px;
     right: 0;
       z-index: -4;
     cursor: pointer;
