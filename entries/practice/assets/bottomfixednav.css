@@ -2,16 +2,19 @@ ul {
     list-style-type: none;
     position: fixed;
     bottom: 0;
+    /* You can write top if you want your nav to be fixed to the top.
+    top: 0; */
     width: 100%;
     font-family: 'IBM Plex Mono', monospace;
     padding-inline-start: 10px;
   }
   
+  /*This makes the list items float left in a singular line.*/
   li {
     float: left;
     padding: 0 10px;
   }
-
+  
   li a {
     display: block;
     padding: 8px;
@@ -20,19 +23,23 @@ ul {
     opacity: 75%;
     border-radius: 25px;
   }
-
+  
+  
+  /*This affects an unvisited link.*/
   li a:link {
     background-color: blue;
     color: white;
     opacity: 100%;
   }
   
+  /*This affects the link when it is being clicked on.*/
   li a:active {
+      background-color: yellow;
     opacity: 100%;
   }
-
+  
   li a:hover {
-    background-color: rgb(209, 22, 119);
+    background-color: rgb(214, 23, 138);
     opacity: 100%;
   }
   
@@ -40,12 +47,10 @@ ul {
     border-right: none;
   }
   
+  /* Look at this example here*/
   div {
     width: 200%;
     height: 1000%;
     overflow: scroll;
     display: flex;
   }
-
-  
-  
