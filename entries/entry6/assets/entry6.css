@@ -185,9 +185,11 @@ ul {
     font-style: normal;
   }
   
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
+
+li a:hover:not(.active) {
+    background-color: #5a5a60;
+}
+
   
   .active {
     background-color:rgb(255, 205, 118);
