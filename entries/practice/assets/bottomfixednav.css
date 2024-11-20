@@ -20,5 +20,32 @@ ul {
     opacity: 75%;
     border-radius: 25px;
   }
+
+  li a:link {
+    background-color: blue;
+    color: white;
+    opacity: 100%;
+  }
+  
+  li a:active {
+    opacity: 100%;
+  }
+
+  li a:hover {
+    background-color: rgb(209, 22, 119);
+    opacity: 100%;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  div {
+    width: 200%;
+    height: 1000%;
+    overflow: scroll;
+    display: flex;
+  }
+
   
   
