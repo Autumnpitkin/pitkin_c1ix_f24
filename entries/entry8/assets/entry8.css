@@ -837,7 +837,6 @@ tbody td {
     width: var(--wheel-btn-diameter);
     height: var(--wheel-btn-diameter);
     position: relative;
-    left: 20px;
     right: 0;
       z-index: -4;
     cursor: pointer;
