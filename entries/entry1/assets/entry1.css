@@ -292,7 +292,7 @@ img.c {
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #45454b;
   }
   
   .active {
