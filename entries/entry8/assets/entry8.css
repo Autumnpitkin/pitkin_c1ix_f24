@@ -837,7 +837,7 @@ tbody td {
     width: var(--wheel-btn-diameter);
     height: var(--wheel-btn-diameter);
     position: absolute;
-    right: 0;
+    right: -20%;
       z-index: -4;
     cursor: pointer;
     border-radius: 50%;
@@ -868,8 +868,8 @@ tbody td {
 
   .tooltip {
     position: absolute;
-    left: 95%;
-    top: 64%;
+    right: -45%;
+    top: 59%;
     width: 250px;
     height: 150px;
     padding: var(--spacing__base_unit) var(--spacing__base_unit) 0 var(--spacing__base_unit);
