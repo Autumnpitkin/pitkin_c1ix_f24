@@ -297,7 +297,6 @@ ul {
     transform: scale(1.4, 1.6);
     opacity: 0;
   }
- 
 
 
   .purple-section {
@@ -343,7 +342,7 @@ body,h2,h3,h4,h5,h6,span,b,a,small,div{
   font-family: "Dela Gothic One", sans-serif;
 }
 
-.h1 {
+.h1{
   font-size: 63px;
   font-weight: 700;
   margin-bottom: 4px;
