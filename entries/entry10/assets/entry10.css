@@ -52,8 +52,8 @@ video::-webkit-media-controls {
     
 .overlay-text2{
     position: absolute;
-    top: 57%; 
-    left: 46%; 
+    top: 58%; 
+    left: 43%; 
     text-align: center;
     line-height: 1;
     font-size: 60px;
@@ -341,6 +341,12 @@ p{
 
 body,h2,h3,h4,h5,h6,span,b,a,small,div{
   font-family: "Dela Gothic One", sans-serif;
+}
+
+.h1 {
+  font-size: 63px;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
   
   
