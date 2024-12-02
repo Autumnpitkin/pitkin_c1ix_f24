@@ -338,8 +338,9 @@ body,h2,h3,h4,h5,h6,span,b,a,small,div{
   font-family: "Dela Gothic One", sans-serif;
 }
 
-.h1{
+.green-content h1 {
   font-size: 63px;
+  color: rgb(75, 56, 105);
   font-weight: 700;
   margin-bottom: 4px;
 }
