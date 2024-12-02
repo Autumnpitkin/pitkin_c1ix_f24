@@ -207,10 +207,6 @@ ul {
     padding: 15px;
   }
   
-  h2 {
-    text-align: center;
-  }
-  
   section {
     padding: 20px;
     margin: 15px auto 0;
@@ -319,7 +315,7 @@ ul {
 .purple-paragraph h2 {
     margin-top: 10px;
     color: rgb(252, 220, 226);
-    font-size: 18px;
+    font-size: 40px;
 }
 
 .purple-paragraph p {
