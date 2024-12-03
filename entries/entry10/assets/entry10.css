@@ -317,7 +317,6 @@ ul {
     color: rgb(252, 220, 226);
     font-size: 40px;
     flex: 1;
-    padding: 20px;
 }
 
 
@@ -345,7 +344,6 @@ body,h2,h3,h4,h5,h6,span,b,a,small,div{
 
 body{
   background-color:rgb(234, 192, 199);
-  text-align: center;
 }
 
 .drag-container {
