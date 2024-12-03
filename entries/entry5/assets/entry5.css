@@ -193,110 +193,52 @@ ul {
     background-color:rgb(224, 113, 133);
   }
 
-  .options {
-    display: grid;
-    grid-template-rows: repeat(10, 35px);
-    grid-template-columns: 120px;
-    gap: 10px;
-    margin: 20px 0;
-    justify-content: center;
-}
 
-.options button {
-    background: rgba(214, 217, 227, 0.6);
-    border: 2px solid rgb(224, 113, 133);
-    border-radius: 10px;
-    padding: 10px;
-    font-family: 'Prompt', sans-serif;
-    cursor: pointer;
-    font-size: 1rem;
-    text-transform: capitalize;
-}
-
-.options button:hover {
-    background-color: rgba(224, 113, 133, 0.8);
-    color: #fff;
-}
-
-.container {
+.coffee-container {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.coffee_name {
-    font-size: 2rem;
-    margin: 20px 0;
-    color: rgb(224, 113, 133);
-    font-family: 'Dela Gothic One', sans-serif;
-}
-
-.cup {
-    width: 200px;
-    height: 150px;
-    background-color: #666;
-    border-radius: 0 0 100px 100px;
+.coffee-cup {
+    width: 150px;
+    height: 200px;
+    border-radius: 25px 25px 0 0;
+    border: 2px solid #333;
     position: relative;
+    background-color: #f5f5f5;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.plate {
-    width: 230px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin-top: -10px;
-}
-
-.filling {
-    position: relative;
+.coffee-fill {
     width: 100%;
     height: 0;
-    background-color: transparent;
+    background-color: #3e2723; /* Brown color for coffee */
+    position: absolute;
+    bottom: 0;
+    transition: height 0.5s ease-in-out;
 }
 
-.filling .coffee {
-    background-color: #3e1f0a; /* Coffee color */
-    height: 40%;
+.controls {
+    margin-top: 20px;
 }
 
-.filling .water {
-    background-color: #b7c4cc; /* Water color */
-    height: 20%;
+button.coffee-btn {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.filling .liquor {
-    background-color: #a4745e; /* Liquor color */
-    height: 10%;
+button.coffee-btn:hover {
+    background-color: #F4511E;
 }
-
-.filling .milk {
-    background-color: #f1e3e0; /* Milk color */
-    height: 30%;
-}
-
-.filling .whipped_cream {
-    background-color: #f6f6f6; /* Whipped cream color */
-    height: 15%;
-}
-
-.filling .milk_foam {
-    background-color: #e0e0e0; /* Milk foam color */
-    height: 10%;
-}
-
-.filling .steamed_milk {
-    background-color: #f5e3b3; /* Steamed milk color */
-    height: 25%;
-}
-
-.filling .chocolate {
-    background-color: #3e1f0a; /* Chocolate color */
-    height: 15%;
-}
-
-.filling.reset {
-    height: 0; /* Resets the cup filling when reset */
-}
-
-

@@ -63,22 +63,16 @@
       <button id="ristretto">Ristretto</button>
   </div>
   
-  <div class="container">
-      <h1 class="coffee_name">Choose your coffee</h1>
-      <div class="cup">
-          <div class="filling reset">
-              <div class="coffee">Coffee</div>
-              <div class="water">Water</div>
-              <div class="liquor">Liquor</div>
-              <div class="milk">Milk</div>
-              <div class="whipped_cream">Whipped cream</div>
-              <div class="milk_foam">Milk foam</div>
-              <div class="steamed_milk">Steamed milk</div>
-              <div class="chocolate">Chocolate</div>
-          </div>
-          <div class="plate"></div>
-      </div>
-  </div>
+  <div class="coffee-container">
+    <div class="coffee-cup">
+        <div class="coffee-fill" id="coffeeFill"></div>
+    </div>
+    <div class="controls">
+        <button class="coffee-btn" data-coffee="small">Small</button>
+        <button class="coffee-btn" data-coffee="medium">Medium</button>
+        <button class="coffee-btn" data-coffee="large">Large</button>
+    </div>
+</div>
   
 
     <div class="image-gallery">
@@ -94,9 +88,9 @@
 </body>
 </html>
     
-        <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 
-      <script>
+    <script>
       // Get the button
       let mybutton = document.getElementById("myBtn");
       
@@ -117,42 +111,25 @@
         document.documentElement.scrollTop = 0;
       }
 
-      const coffeeName = document.querySelector(".coffee_name");
-const filling = document.querySelector(".filling");
-const buttons = document.querySelectorAll(".options button");
+     
+        const coffeeFill = document.getElementById('coffeeFill');
+        const coffeeButtons = document.querySelectorAll('.coffee-btn');
 
-// Reset class when clicked
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    filling.className = `filling reset`; // Reset previous classes
-    coffeeName.textContent = button.textContent;
+        // Set different fill heights based on coffee size
+        const coffeeSizes = {
+            small: 30,   // 30% fill
+            medium: 60,  // 60% fill
+            large: 100   // 100% fill
+        };
 
-    // Apply the corresponding filling class based on button clicked
-    if (button.id === "americano") {
-      filling.classList.add("coffee", "water");
-    } else if (button.id === "au_lait") {
-      filling.classList.add("coffee", "milk");
-    } else if (button.id === "capuccino") {
-      filling.classList.add("coffee", "milk_foam");
-    } else if (button.id === "corretto") {
-      filling.classList.add("coffee", "liquor");
-    } else if (button.id === "espresso") {
-      filling.classList.add("coffee");
-    } else if (button.id === "latte") {
-      filling.classList.add("coffee", "milk");
-    } else if (button.id === "lungo") {
-      filling.classList.add("coffee", "water");
-    } else if (button.id === "macchiato") {
-      filling.classList.add("coffee", "milk_foam");
-    } else if (button.id === "mocha") {
-      filling.classList.add("coffee", "chocolate", "milk");
-    } else if (button.id === "ristretto") {
-      filling.classList.add("coffee");
-    }
-  });
-});
-
-      </script>
+        coffeeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const size = button.getAttribute('data-coffee');
+                const fillHeight = coffeeSizes[size];
+                coffeeFill.style.height = `${fillHeight}%`;
+            });
+        });
+    </script>
       
 
 </body>
