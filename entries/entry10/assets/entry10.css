@@ -417,19 +417,17 @@ body{
 }
 
 .game-title {
-  background-color: #ffe4b5; /* Light peach background for title */
-  color: #333; /* Dark text color for better contrast */
-  padding: 10px 20px; /* Adds spacing around text */
-  border-radius: 8px; /* Rounded corners for visual appeal */
-  display: inline-block; /* Keeps background size limited to text */
-  font-size: 24px; /* Adjust font size */
-  font-weight: bold; 
-  margin-bottom: 20px; /* Space below the title */
+  color: #e07185; /* Pink text */
+  background-color: #ffe4b5; /* Optional: Light peach background */
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
   font-family: "Dela Gothic One", sans-serif;
-  text-align: center; /* Centers the text */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for emphasis */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-  
   
   
