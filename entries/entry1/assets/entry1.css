@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(237, 229, 248);
+  background-color: rgb(251, 238, 215);
   }
     
 .video-container {
@@ -44,7 +44,7 @@ video::-webkit-media-controls {
   text-align: center;
   line-height: 1;
   font-size: 60px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -52,19 +52,19 @@ video::-webkit-media-controls {
   
 .overlay-text2{
   position: absolute;
-  top: 55%; 
-  left: 46%; 
+  top: 54%; 
+  left: 44%; 
   text-align: center;
   line-height: 1;
   font-size: 60px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: 'Apple Garamond';
   font-weight: 400;
   font-style: italic;
 }
 
 .text-section2 {
-background-color:rgb(237, 229, 248);
+background-color:rgb(251, 238, 215);
 text-align: center;
 margin-top: 20px;
 color:rgb(255, 205, 118);
@@ -78,7 +78,7 @@ padding-right: 10px;
 }
 
 .text-section3 {
-  background-color:rgb(237, 229, 248);
+  background-color:rgb(251, 238, 215);
   padding: 20px;
   text-align: center;
   margin-bottom: 60px;
@@ -109,7 +109,7 @@ a.social:visited {
 }
 
 .text-section {
-  background-color:rgb(126, 112, 147);
+  background-color:rgb(251, 238, 215);
   margin-left: 30vh;
   margin-right: 30vh;
   text-align: relative;
@@ -179,7 +179,7 @@ section {
 
 .purple-paragraph h2 {
   margin-top: 10px;
-  color: rgb(237, 229, 248);
+  color: rgb(251, 238, 215);
   font-size: 40px;
   flex: 1;
   padding: 20px;
@@ -189,7 +189,7 @@ section {
 .purple-paragraph p {
   margin-top: 5px;
   line-height: 1.6;
-  color: rgb(237, 229, 248);
+  color: rgb(251, 238, 215);
 }
 
 .mid-content{
@@ -208,7 +208,7 @@ font-family: "Dela Gothic One", sans-serif;
 
 
 .game-title {
-color: rgb(237, 229, 248);
+color: rgb(251, 238, 215);
 background-color: rgb(255, 205, 118);
 padding: 10px 20px;
 border-radius: 8px;
@@ -235,7 +235,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: none;
   outline: none;
   background-color: rgb(255, 205, 118);
-  color: rgb(237, 229, 248);
+  color: rgb(251, 238, 215);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -276,11 +276,6 @@ li a:hover:not(.active) {
 
 .active {
   background-color:rgb(255, 205, 118);
-}
-
-canvas {
-  display: block;
-  background-color: white;
 }
 
 .image-gallery {
@@ -336,7 +331,7 @@ canvas {
     border: none;
     outline: none;
     background-color: rgb(255, 205, 118);
-    color: rgb(247, 242, 235);
+    color: rgb(251, 238, 215);
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
@@ -439,7 +434,7 @@ canvas {
     }
     
     &:active {
-      background-color: #00ff00;
+      background-color: rgb(251, 238, 215);
     }
   }
   
