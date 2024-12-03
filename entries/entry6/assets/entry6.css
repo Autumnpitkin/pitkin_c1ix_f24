@@ -137,6 +137,7 @@ a.social:hover{
 .image-gallery img {
     width: 400px;
     height: 500px;
+    max-width: 800px;
     border: 5px solid rgb(255, 205, 118);
     border-radius: 5px;
     object-fit: cover; /* Ensures images fill the container without distortion */
