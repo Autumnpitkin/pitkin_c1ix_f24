@@ -206,7 +206,7 @@ ul {
   }
   
   .clothing-preview:hover {
-    transform: scale(1.05); /* Optional: zoom effect on hover */
+    transform: scale(1.05); 
   }
   
 
