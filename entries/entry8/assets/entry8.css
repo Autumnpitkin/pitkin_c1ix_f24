@@ -192,90 +192,75 @@ ul {
     background-color:rgb(23, 101, 114);
   }
 
-  .workout-section {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
+  /* General workout section container */
+.workout-section {
+  padding: 20px;
 }
 
 .workout-section_title {
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin: 0;
-    font-size: 40px;
-    color: rgb(23, 101, 114);
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Dela Gothic One', sans-serif;
+  color: #ff69b4; /* Pink color */
 }
 
-.workout-section_plan {
-    /* background-color: #3f3f44; */
-    display: inline-block;
-    max-width: 30%;
-    width: 25em;
-    /* border: 5px solid #282829; */
-    padding-bottom: 1.5rem;
-    line-height: 3rem;
-    border-radius: 2%;
+/* Container for workout boxes */
+.workout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.workout-plan1, .workout-plan2, .workout-plan3 {
-    width: 80%;
-    margin: 0.5rem;
+/* Individual workout boxes */
+.workout-box {
+  border: 2px solid #ff69b4; /* Pink border */
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-.all_tables {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    width: 100%;
+/* Workout titles */
+.workout-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff69b4;
 }
 
-caption {
-    font-family: "Dela Gothic One", sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: rgb(23, 101, 114);
-    /* text-shadow: 2px 2px 2px grey; */
+/* Table styles */
+.workout-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Prompt', sans-serif;
 }
 
-table {
-    font-family:Garamond, Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
-    /* padding: 2rem; */
-    border: none;
-    border-collapse: collapse;
-    table-layout: fixed;
-    max-width: 100%;
-    text-align: center;
+.workout-box caption {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-thead th {
-    font-family: "Dela Gothic One", sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: rgb(23, 101, 114);
+.workout-box th, .workout-box td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row color styling */
+.dark-table {
+  background-color: #f1f1f1;
 }
 
 .light-table {
-    background-color: rgb(178, 206, 211);
+  background-color: #ffffff;
 }
 
-.light-table:hover {
-    background-color: rgb(178, 206, 211);
-}
-
-.dark-table {
-    background-color: rgb(86, 147, 158);
-}
-
-.dark-table:hover {
-    background-color: rgb(167, 205, 211);
+/* Optionally, you can add space between each workout box when adding images */
+.workout-container img {
+  margin-bottom: 20px;
 }
 
 thead th {
