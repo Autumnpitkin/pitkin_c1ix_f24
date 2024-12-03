@@ -1,4 +1,3 @@
-// * VARIABLES
 const wheelArea = document.getElementById('wheel');
 const spinArea = document.getElementById('spin');
 const spinBtn = document.getElementById('btn--wheel');

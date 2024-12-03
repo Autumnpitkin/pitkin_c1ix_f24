@@ -63,7 +63,7 @@ video::-webkit-media-controls {
 }
 
 .text-section2 {
-    background-color:rgb(193, 202, 203); /* Set your desired background color */
+    background-color:rgb(193, 202, 203); 
     text-align: center;
     margin-top: 20px;
     color:rgb(23, 101, 114);
@@ -192,7 +192,6 @@ ul {
     background-color:rgb(23, 101, 114);
   }
 
-  /* General workout section container */
 .workout-section {
   padding: 20px;
 }
@@ -205,23 +204,20 @@ ul {
   color: rgb(23, 101, 114); 
 }
 
-/* Container for workout boxes */
 .workout-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Individual workout boxes */
 .workout-box {
   border: 2px solid rgb(23, 101, 114); 
   padding: 15px;
   border-radius: 10px;
-  background-color: #f9f9f9; /* Light background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Workout titles */
 .workout-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -229,7 +225,6 @@ ul {
   color: rgb(23, 101, 114);
 }
 
-/* Table styles */
 .workout-box table {
   width: 100%;
   border-collapse: collapse;
@@ -249,7 +244,6 @@ ul {
   border-bottom: 1px solid #ddd;
 }
 
-/* Alternate row color styling */
 .dark-table {
   background-color: #f1f1f1;
 }
@@ -258,7 +252,6 @@ ul {
   background-color: #ffffff;
 }
 
-/* Optionally, you can add space between each workout box when adding images */
 .workout-container img {
   margin-bottom: 20px;
 }
@@ -508,7 +501,6 @@ tbody td {
     flex-direction: column;
     margin: 0 2%;
     height: 100%;
-  /*   background: coral; */
   }
   .button:active {
     box-shadow: 0 2px 2px var(--darken3);
@@ -518,7 +510,7 @@ tbody td {
     flex-basis: var(--wheel-width);
     flex-grow: 2;
     align-items: center;
-  /*   width: calc(var(--wheel-width) + 10%); */
+  
   }
   .flip-card {
     width: calc(var(--wheel-outer-diameter) + 6%);
@@ -539,7 +531,7 @@ tbody td {
   }
   .flip-card__front {
     backface-visibility: hidden;
-  /*     background: crimson; */
+  
   }
   .flip-card__back {
     position: absolute;
@@ -667,12 +659,11 @@ tbody td {
     top: 50%;
     transform: translate(0,-50%);
     color: var(--grey1);
-    /* Use flexbox to center align the child elements without using transform property because that property will be used for spinning animation later. */
       display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  /*   background: salmon; */
+ 
   }
   @keyframes backInLeft {
     0% {
@@ -714,7 +705,7 @@ tbody td {
     border-radius: 50%;
     overflow: hidden;
     font-weight: 600;
-  /*   background: royalblue; */
+  
   }
   .slice__container {
     position: absolute;
@@ -858,7 +849,7 @@ tbody td {
     width: 250px;
     height: 150px;
     padding: var(--spacing__base_unit) var(--spacing__base_unit) 0 var(--spacing__base_unit);
-  /*   background: #fff; */
+
     color: var(--grey3);
     border: 1px solid var(--darken3);
   }
@@ -908,17 +899,7 @@ tbody td {
   /*     background: orchid; */
       z-index: 11;
   }
-  /* .wheel__indicator::after {
-    content: '';
-      width: 0;
-      height: 0;
-      border-top: 9vmin solid var(--indicator-color);
-      position: absolute;
-      border-left: 4vmin solid transparent;
-      border-right: 4vmin solid transparent;
-      left: 0;
-  } */
-  /* Shadow of the indicator */
+  
   .wheel__indicator::before, .wheel__indicator::after {
     content: '';
   width: 0;

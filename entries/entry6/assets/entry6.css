@@ -64,7 +64,7 @@ video::-webkit-media-controls {
 }
 
 .text-section2 {
-    background-color:rgb(251, 238, 215); /* Set your desired background color */
+    background-color:rgb(251, 238, 215); 
     text-align: center;
     margin-top: 20px;
     color:rgb(255, 205, 118);
@@ -140,7 +140,7 @@ a.social:hover{
     max-width: 800px;
     border: 5px solid rgb(255, 205, 118);
     border-radius: 5px;
-    object-fit: cover; /* Ensures images fill the container without distortion */
+    object-fit: cover; 
 }
 
 .image-gallery img:nth-child(1) {
@@ -163,7 +163,7 @@ a.social:hover{
     grid-area: image5;
     width: 400px;
     height: 500px; 
-    margin: 0 auto; /* Centers the image horizontally */
+    margin: 0 auto; 
 }
 
     
@@ -226,13 +226,13 @@ ul {
   }
 
   .clothing-link {
-    text-decoration: none; /* Removes the underline from the link */
+    text-decoration: none; 
   }
   
   .clothing-preview {
-    width: 400px; /* Adjust the width as needed */
+    width: 400px; 
     height: 400px;
-    transition: transform 0.3s ease-in-out; /* Optional: adds a hover effect */
+    transition: transform 0.3s ease-in-out; 
   }
   
   .clothing-preview:hover {
@@ -240,46 +240,27 @@ ul {
   }
 
   .outfit-title {
-    background-color: rgb(255, 205, 118); /* Choose a background color */
+    background-color: rgb(255, 205, 118); 
     padding: 10px 20px;
     text-align: center;
     border-radius: 5px;
-    margin-bottom: 20px; /* Adds space between the title and the images */
+    margin-bottom: 20px; 
   }
   
 .outfit-title h2 {
     font-size: 40px;
-    color: #333; /* Change the text color if needed */
+    color: #333; 
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
   
 .outfit-items a img {
-    width: 400px; /* Adjust based on your preferred image size */
-    max-width: 400px; /* Set a max width for the images */
+    width: 400px; 
+    max-width: 400px; 
     margin: 10px;
     display: inline-block;
 }
-  
-
- /* button{
-    margin-top:20%;
-  }
-  
-  character{
-  z-index: -1000;   
-  }
-  
-  .shirt{
-      visibility:hidden;
-    z-index: 2;
-  }
-  
-  .pant{
-      visibility:hidden;
-    z-index: 1;
-      }
   
   
   

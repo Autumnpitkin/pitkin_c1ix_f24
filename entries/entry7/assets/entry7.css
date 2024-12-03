@@ -64,7 +64,7 @@ video::-webkit-media-controls {
 }
 
 .text-section2 {
-    background-color:rgb(217, 205, 236); /* Set your desired background color */
+    background-color:rgb(217, 205, 236); 
     text-align: center;
     margin-top: 20px;
     color:rgb(75, 56, 105);

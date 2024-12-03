@@ -101,7 +101,6 @@ h7{
     transition: .4s;
 }
 
-/* Benner Bottom Content */
 .benner-bottom-content {
 
 	background: rgb(237, 229, 248);
@@ -140,7 +139,6 @@ h7{
     transition: .4s;
 }
 
-/* GGreen section */
 .green-section{
     width: 100%;
     height: 800px;
@@ -177,7 +175,6 @@ h7{
     margin-top: 10px;
 }
 
-/* Video Section */
 .video-section {
         background: url(TacoTable.jpg) no-repeat center center;
         background-size:cover ;
@@ -204,7 +201,6 @@ h7{
     height: "612"
 }
 
-/* Rcipi */
 .recipi-main-section-1{
 	margin-top: 0; 
     padding-bottom: 70px; 
@@ -326,7 +322,6 @@ ul {
     background-color:rgb(75, 56, 105);;
   }
 
-  /* Recipe Grid */
 .recipi-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

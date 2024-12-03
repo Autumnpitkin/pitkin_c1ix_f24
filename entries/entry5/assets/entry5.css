@@ -64,7 +64,7 @@ video::-webkit-media-controls {
 }
 
 .text-section2 {
-    background-color:rgb(234, 192, 199); /* Set your desired background color */
+    background-color:rgb(234, 192, 199); 
     text-align: center;
     margin-top: 20px;
     color:rgb(224, 113, 133);
@@ -216,7 +216,7 @@ ul {
 
 .coffee-fill {
     width: 100%;
-    background-color: #3e2723; /* Brown color for coffee */
+    background-color: #3e2723; 
     position: absolute;
     bottom: 0;
     transition: height 0.5s ease-in-out;
@@ -224,7 +224,7 @@ ul {
 
 .milk-fill {
     width: 100%;
-    background-color: #f5deb3; /* Light color for milk/foam */
+    background-color: #f5deb3; 
     position: absolute;
     bottom: 0;
     transition: height 0.5s ease-in-out;
@@ -256,16 +256,16 @@ body,h2,h3,h4,h5,h6,span,b,a,small,div{
 }
 
 .outfit-title {
-    background-color: rgb(224, 113, 133); /* Choose a background color */
+    background-color: rgb(224, 113, 133); 
     padding: 10px 20px;
     text-align: center;
     border-radius: 5px;
-    margin-bottom: 20px; /* Adds space between the title and the images */
+    margin-bottom: 20px; 
   }
   
   .outfit-title h2 {
     font-size: 50px;
-    color: rgb(234, 192, 199); /* Change the text color if needed */
+    color: rgb(234, 192, 199); 
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
     font-style: normal;
