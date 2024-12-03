@@ -417,18 +417,19 @@ body{
 }
 
 .game-title {
-  background-color: rgb(224, 113, 133); /* Light peach background */
-  color: rgb(234, 192, 199); /* Dark text color for contrast */
-  padding: 10px 20px;
-  border-radius: 8px; /* Rounded corners */
-  display: inline-block; /* Ensures the background wraps only the text */
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  background-color: #ffe4b5; /* Light peach background for title */
+  color: #333; /* Dark text color for better contrast */
+  padding: 10px 20px; /* Adds spacing around text */
+  border-radius: 8px; /* Rounded corners for visual appeal */
+  display: inline-block; /* Keeps background size limited to text */
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; 
+  margin-bottom: 20px; /* Space below the title */
   font-family: "Dela Gothic One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  text-align: center; /* Centers the text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for emphasis */
 }
+
   
   
   
