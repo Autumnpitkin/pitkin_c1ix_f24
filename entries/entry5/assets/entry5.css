@@ -250,11 +250,6 @@ button.coffee-btn {
 button.coffee-btn:hover {
     background-color: #F4511E;
 }
-
-p{
-    font-family:Garamond, Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-}
   
 body,h2,h3,h4,h5,h6,span,b,a,small,div{
     font-family: "Dela Gothic One", sans-serif;
