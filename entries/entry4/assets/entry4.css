@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(234, 192, 199);
+  background-color: rgb(193, 202, 203);
   }
     
 .video-container {
@@ -64,58 +64,58 @@ video::-webkit-media-controls {
 }
 
 .text-section2 {
-background-color:rgb(234, 192, 199); 
-text-align: center;
-margin-top: 20px;
-color:rgb(224, 113, 133);
-font-family: "Dela Gothic One", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 40px;
-padding-top: 20px;
-padding-left: 10px;
-padding-right: 10px;
+  background-color:rgb(193, 202, 203); /* Set your desired background color */
+  text-align: center;
+  margin-top: 20px;
+  color:rgb(23, 101, 114);
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .text-section3 {
-  background-color:rgb(234, 192, 199); 
+  background-color:rgb(193, 202, 203); 
   padding: 20px;
   text-align: center;
   margin-bottom: 60px;
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color:rgb(224, 113, 133);
+  color:rgb(23, 101, 114);
   font-size: 30px;
   text-align: center;
 }
 
 a {
-  color: rgb(224, 113, 133); 
+  color: rgb(23, 101, 114); 
   text-decoration: 
 }
 
 a.social:hover{
   font-family: 'Apple Garamond';
   font-style: italic;
-  color:rgb(224, 113, 133);
+  color:rgb(23, 101, 114);
   font-size: 30px;
 }
 
 a.social:visited {
-  color: rgb(224, 113, 133);
+  color: rgb(23, 101, 114);
   background-color: transparent;
   text-decoration: none;
 }
 
 .text-section {
-  background-color:rgb(234, 192, 199); 
+  background-color:rgb(193, 202, 203); 
   margin-left: 30vh;
   margin-right: 30vh;
   text-align: relative;
   margin-bottom: 80px;
   margin-top: 20px;
-  color:rgb(224, 113, 133);
+  color:rgb(23, 101, 114);
   font-family:Garamond, Georgia, 'Times New Roman', Times, serif;
   font-size: 30px;
   font-style: italic;
@@ -133,7 +133,7 @@ a.social:visited {
 .image-gallery img {
   max-width: 100%;
   height: auto;
-  border: 5px solid rgb(224, 113, 133);
+  border: 5px solid rgb(23, 101, 114);
   border-radius: 5px;
 }
   
@@ -149,15 +149,15 @@ a.social:visited {
   font-style: normal;
   border: none;
   outline: none;
-  background-color: rgb(224, 113, 133);
-  color: rgb(247, 242, 235);
+  background-color: rgb(23, 101, 114);
+  color: rgb(193, 202, 203);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
 }
       
 #myBtn:hover {
-  background-color: rgb(224, 113, 133);
+  background-color: rgb(193, 202, 203);
 }
 
 ul {
@@ -190,7 +190,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color:rgb(224, 113, 133);
+  background-color:rgb(23, 101, 114);
 }
 
 
@@ -203,7 +203,7 @@ ul {
 }
 
 ul li a {
-  color: #fff;
+  color: rgb(193, 202, 203);
   padding: 15px;
 }
 
@@ -213,8 +213,8 @@ section {
 }
 
 .bg {
-  background-color: rgb(224, 113, 133);
-  color: #FFF;
+  background-color: rgb(23, 101, 114);
+  color: rgb(193, 202, 203);
   text-align: center;
   margin-top: 20px;
   font-family: "Dela Gothic One", sans-serif;
@@ -263,40 +263,10 @@ section {
   padding: 15px 40px;
   transition: all 0.2s;
 } 
-.button-blue{
-  background-color: #ff1616;
-  color: #fff;
-}
-.button:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-.button:active{
-  transform: translateY(-1px);
-}
-.button::after{
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  border-radius: 100px;
-  z-index: -1;
-  transition: all 0.4s;
-}
-.button-blue::after{
-  background-color: #ff1616;
-}
-.button:hover::after{
-  transform: scale(1.4, 1.6);
-  opacity: 0;
-}
 
 
 .purple-section {
-  background-color: rgb(224, 113, 133); 
+  background-color: rgb(23, 101, 114);
   padding: 20px 0; 
   overflow: hidden;
 }
@@ -314,7 +284,7 @@ section {
 
 .purple-paragraph h2 {
   margin-top: 10px;
-  color: rgb(252, 220, 226);
+  color: rgb(193, 202, 203);
   font-size: 40px;
   flex: 1;
   padding: 20px;
@@ -324,7 +294,7 @@ section {
 .purple-paragraph p {
   margin-top: 5px;
   line-height: 1.6;
-  color: rgb(252, 220, 226);
+  color: rgb(193, 202, 203);
 }
 
 .mid-content{
@@ -341,89 +311,11 @@ body,h2,h3,h4,h5,h6,span,b,a,small,div{
 font-family: "Dela Gothic One", sans-serif;
 }
 
-/* styles.css */
 
-body{
-background-color:rgb(234, 192, 199);
-text-align: center;
-}
-
-.drag-container {
-display: flex;
-justify-content: space-around;
-margin-top: 20px;
-}
-
-.items {
-width: 200px;
-padding: 10px;
-background-color: #ffffff;
-border: 1px solid #ccc;
-border-radius: 8px;
-}
-
-.items p {
-background-color: #e0e0e0;
-color: rgb(224, 113, 133);
-padding: 10px;
-margin: 5px 0;
-border-radius: 4px;
-cursor: grab;
-}
-
-.bins {
-display: flex;
-justify-content: space-around;
-width: 400px;
-}
-
-.bin {
-width: 180px;
-height: 200px;
-padding: 10px;
-background-color: #f0f0f0;
-border: 2px dashed #ccc;
-border-radius: 8px;
-text-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-}
-
-.bin.keep {
-background-color: #d4edda; 
-color: #155724;
-}
-
-.bin.discard {
-background-color: #f8d7da; 
-color: #721c24;
-}
-
-.reset-button {
-background-color: #e07185; 
-color: white;            
-border: none;              
-padding: 12px 24px;       
-font-size: 16px;          
-font-family: "Dela Gothic One", sans-serif;
-border-radius: 8px;       
-cursor: pointer;         
-transition: background-color 0.3s ease; 
-}
-
-.reset-button:hover {
-background-color: #d0637d; 
-}
-
-.reset-button:focus {
-outline: none; 
-}
 
 .game-title {
-color: rgb(234, 192, 199); 
-background-color: rgb(224, 113, 133); 
+color: rgb(193, 202, 203);
+background-color: rgb(23, 101, 114);
 padding: 10px 20px;
 border-radius: 8px;
 display: inline-block;
