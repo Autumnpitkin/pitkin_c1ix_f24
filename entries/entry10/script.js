@@ -26,3 +26,25 @@ bins.forEach(bin => {
     if (originalItem) originalItem.remove();
   });
 });
+
+document.getElementById('reset-button').addEventListener('click', () => {
+    // Clear bins
+    document.querySelectorAll('.bin').forEach(bin => bin.innerHTML = bin.classList.contains('keep') ? 'Keep' : 'Discard');
+  
+    // Reset items
+    const itemsContainer = document.querySelector('.items');
+    itemsContainer.innerHTML = `
+      <p draggable="true">Old T-shirt</p>
+      <p draggable="true">Favorite Book</p>
+      <p draggable="true">Unused Mug</p>
+      <p draggable="true">Special Gift</p>
+    `;
+  
+    // Reattach event listeners for drag-and-drop
+    const items = document.querySelectorAll('.items p');
+    items.forEach(item => {
+      item.addEventListener('dragstart', e => {
+        e.dataTransfer.setData('text/plain', e.target.textContent);
+      });
+    });
+  });
