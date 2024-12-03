@@ -276,6 +276,11 @@ li a:hover:not(.active) {
   background-color:rgb(75, 56, 105);
 }
 
+canvas {
+  display: block;
+  background-color: white;
+}
+
 @keyframes marquee {
     0% {
       left: 0;
