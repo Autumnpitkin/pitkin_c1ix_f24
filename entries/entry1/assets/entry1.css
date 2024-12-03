@@ -53,7 +53,7 @@ video::-webkit-media-controls {
 .overlay-text2{
   position: absolute;
   top: 54%; 
-  left: 44%; 
+  left: 45%; 
   text-align: center;
   line-height: 1;
   font-size: 60px;
@@ -412,7 +412,7 @@ li a:hover:not(.active) {
     width: 100%;
     border: 2px solid #111;
     box-shadow: 0 0 50px rgb(255, 205, 118);
-    margin-left: 100px;
+    margin-left: 160px;
   }
   
   #capture-button {
@@ -420,9 +420,9 @@ li a:hover:not(.active) {
     position: absolute;
     width: 50px;
     height: 50px;
-    bottom: 20px;
-    left: 50%;
-    margin-left: -50px;
+    bottom: 1px;
+    left: 60%;
+    margin-right: 30px;
     border-radius: 50%;
     background-color: #ff0000;
     border: 2px solid #fff;
