@@ -295,3 +295,9 @@ body,h2,h3,h4,h5,h6,span,b,a,small,div{
     margin: 5px 0;
   }
   
+  .receipt-line {
+    border: 0;
+    border-top: 2px solid #d4a373;
+    margin: 10px 0;
+  }
+  
