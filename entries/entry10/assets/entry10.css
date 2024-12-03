@@ -64,7 +64,7 @@ video::-webkit-media-controls {
 }
 
 .text-section2 {
-  background-color:rgb(234, 192, 199); /* Set your desired background color */
+  background-color:rgb(234, 192, 199); 
   text-align: center;
   margin-top: 20px;
   color:rgb(224, 113, 133);
@@ -392,12 +392,12 @@ body{
 }
 
 .bin.keep {
-  background-color: #d4edda; /* Light green */
+  background-color: #d4edda; 
   color: #155724;
 }
 
 .bin.discard {
-  background-color: #f8d7da; /* Light red */
+  background-color: #f8d7da; 
   color: #721c24;
 }
 
@@ -413,17 +413,16 @@ body{
   transition: background-color 0.3s ease; 
 }
 
-/* Change the background color when hovering over the button */
 .reset-button:hover {
-  background-color: #d0637d; /* darker pink */
+  background-color: #d0637d; 
 }
 
 .reset-button:focus {
-  outline: none; /* Remove the default outline when focused */
+  outline: none; 
 }
 
 .game-title {
-  color: rgb(234, 192, 199); /* Pink text */
+  color: rgb(234, 192, 199); 
   background-color: rgb(224, 113, 133); 
   padding: 10px 20px;
   border-radius: 8px;
