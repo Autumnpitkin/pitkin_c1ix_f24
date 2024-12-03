@@ -1,20 +1,14 @@
-let selectedOptions = {
-    'Cup Size': 'None',
-    'Flavor': 'None',
-    'Milk': 'None'
-  };
-  
-  function selectOption(category, value) {
-    selectedOptions[category] = value;
-    updateSelectionDisplay();
-  }
-  
-  function updateSelectionDisplay() {
-    const selectionText = `Cup Size: ${selectedOptions['Cup Size']}, 
-                           Flavor: ${selectedOptions['Flavor']}, 
-                           Milk: ${selectedOptions['Milk']}`;
-    document.getElementById('coffee-selection').innerText = selectionText;
-  }
+const coffeeName = document.querySelector(".coffee_name");
+const filling = document.querySelector(".filling");
+const buttons = document.querySelectorAll(".options button");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    filling.className = `filling ${button.id}`;
+    coffeeName.textContent = button.textContent;
+  });
+});
+
   
   let mybutton = document.getElementById("myBtn");
   
