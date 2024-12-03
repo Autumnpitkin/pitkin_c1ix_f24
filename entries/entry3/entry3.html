@@ -120,12 +120,15 @@
 <h1 class="game-title" style="color: rgb(237, 229, 248);">Unleash Your Inner Artist With This Drawing Game</h1>
 
 <h1 style="color:rgb(75, 56, 105); text-align: center;">Select the color you want to use and draw on the board.</h1>
-<p style="color: rgb(75, 56, 105); text-align: center;">Use the erase tool or the clear button to create a new design.</p>
+<p style="color: rgb(75, 56, 105); text-align: center; font-size: 20px;">Use the erase tool or the clear button to create a new design.</p>
 
-<canvas onmousedown="start()" onmouseup="end()" onmousemove="draw(event)" id="myCanvas" width="300" height="300"></canvas>
-<button onclick="cleanse()">Clear</button>
-<button id="erase" onclick="erase()">Erase</button>
-<input type="color" id="colorInput" oninput="changeColor()">
+<div class="canvas-container">
+  <canvas id="drawingCanvas" width="500" height="500"></canvas>
+  <div class="controls">
+    <button id="clearCanvas">Clear Canvas</button>
+  </div>
+</div>
+
 <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 
 <div class="text-section">
@@ -134,7 +137,7 @@
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
  
- <script>
+  <script>
     // Get the button
     let mybutton = document.getElementById("myBtn");
     
@@ -154,51 +157,41 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-    let drawing = false;
-    let color = "#000000";
-    let erasing = false;
-    
-    const draw = e => {
-        posX = e.clientX;
-        posY = e.clientY;
-        if (erasing) {
-            ctx.clearRect(posX, posY, 4, 4);
-        }
-        else if (drawing) {
-            ctx.fillStyle = color;
-            ctx.fillRect(posX, posY, 4, 4);
-        }
-    }
-    
-    const start = () => drawing = true;
-    
-    const end = () => drawing = false;
-    
-    const cleanse = () => ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    const erase = () => {
-        const button = document.getElementById("erase");
-      
-        if (!erasing) {
-          erasing = true;
-          button.innerHTML = "Draw";
-        } else {
-          erasing = false;
-          button.innerHTML = "Erase";
-        }
-      }
-    
-    const changeColor = () => {
-        color = document.getElementById("colorInput").value;
-        if (erasing) {
-            erase();
-        }
-    }
-    
-    </script>
+
+    const canvas = document.getElementById('drawingCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let isDrawing = false; // Tracks whether the user is currently drawing
+    let lastX = 0;
+    let lastY = 0;
+
+    // Start drawing when the mouse is pressed
+    canvas.addEventListener('mousedown', (e) => {
+      isDrawing = true;
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+    });
+
+    // Draw on the canvas when the mouse moves
+    canvas.addEventListener('mousemove', (e) => {
+      if (!isDrawing) return; // Stop the function if the user is not holding the mouse button
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(e.offsetX, e.offsetY);
+      ctx.strokeStyle = '#000'; // Set the drawing color
+      ctx.lineWidth = 2; // Set the line width
+      ctx.stroke();
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+    });
+
+    // Stop drawing when the mouse button is released or the mouse leaves the canvas
+    canvas.addEventListener('mouseup', () => isDrawing = false);
+    canvas.addEventListener('mouseout', () => isDrawing = false);
+
+    // Clear the canvas when the "Clear Canvas" button is clicked
+    document.getElementById('clearCanvas').addEventListener('click', () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+  </script>
     
 </body>
 </html>
