@@ -50,64 +50,75 @@
     </div>
     <br>
 
-<div class="coffee-container">
-  <div class="coffee-cup">
-      <div class="coffee-fill" id="coffeeFill"></div>
-      <div class="milk-fill" id="milkFill"></div>
-  </div>
-  <div class="controls">
-      <button class="coffee-btn" data-coffee="americano">Americano</button>
-      <button class="coffee-btn" data-coffee="latte">Latte</button>
-      <button class="coffee-btn" data-coffee="cappuccino">Cappuccino</button>
-      <button class="coffee-btn" data-coffee="macchiato">Macchiato</button>
-  </div>
-</div>
+
+    <div class="coffee-container">
+      <div class="coffee-cup">
+          <div class="coffee-fill" id="coffeeFill"></div>
+          <div class="milk-fill" id="milkFill"></div>
+      </div>
+      <div class="controls">
+          <button class="coffee-btn" data-coffee="americano">Americano</button>
+          <button class="coffee-btn" data-coffee="latte">Latte</button>
+          <button class="coffee-btn" data-coffee="cappuccino">Cappuccino</button>
+          <button class="coffee-btn" data-coffee="macchiato">Macchiato</button>
+      </div>
+    </div>
+
+    <div class="image-gallery">
+        <img src="assets/IMG_1631.JPEG" class="gallery" alt="Outside of Dunkin" />
+        <img src="assets/IMG_5409.JPG" class="gallery" alt="Dunkin App" />
+        <img src="assets/IMG_5413.JPG" class="gallery" alt="Ordering"/>
+        <img src="assets/IMG_5411.JPG" class="gallery" alt="Order Pickup" />
+        <img src="assets/IMG_1637.JPEG" class="gallery" alt="Picture of What I Ordered" />
+        <img src="assets/IMG_5412.JPG" class="gallery" alt="With Order" />
+        <img src="assets/IMG_5410.JPG" class="gallery" alt="With Order 2" />
+    </div>
     
-<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
-
-    <script>
-      // Get the button
-      let mybutton = document.getElementById("myBtn");
-      
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-
-      const coffeeFill = document.getElementById('coffeeFill');
-        const milkFill = document.getElementById('milkFill');
-        const coffeeButtons = document.querySelectorAll('.coffee-btn');
-
-        // Set different fill ratios based on coffee type
-        const coffeeTypes = {
-            americano: { coffee: 80, milk: 0 }, // Mostly coffee, little to no milk
-            latte: { coffee: 40, milk: 60 },    // 40% coffee, 60% milk
-            cappuccino: { coffee: 30, milk: 70 }, // 30% coffee, 70% foam/milk
-            macchiato: { coffee: 70, milk: 30 }  // Mostly coffee, a dash of milk
-        };
-
-        coffeeButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const type = button.getAttribute('data-coffee');
-                const { coffee, milk } = coffeeTypes[type];
-                coffeeFill.style.height = `${coffee}%`;
-                milkFill.style.height = `${milk}%`;
+        
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+    
+        <script>
+          // Get the button
+          let mybutton = document.getElementById("myBtn");
+          
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+    
+          const coffeeFill = document.getElementById('coffeeFill');
+            const milkFill = document.getElementById('milkFill');
+            const coffeeButtons = document.querySelectorAll('.coffee-btn');
+    
+            // Set different fill ratios based on coffee type
+            const coffeeTypes = {
+                americano: { coffee: 80, milk: 0 }, // Mostly coffee, little to no milk
+                latte: { coffee: 40, milk: 60 },    // 40% coffee, 60% milk
+                cappuccino: { coffee: 30, milk: 70 }, // 30% coffee, 70% foam/milk
+                macchiato: { coffee: 70, milk: 30 }  // Mostly coffee, a dash of milk
+            };
+    
+            coffeeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const type = button.getAttribute('data-coffee');
+                    const { coffee, milk } = coffeeTypes[type];
+                    coffeeFill.style.height = `${coffee}%`;
+                    milkFill.style.height = `${milk}%`;
+                });
             });
-        });
-    </script>
-      
+        </script>
 
 </body>
 </html>
