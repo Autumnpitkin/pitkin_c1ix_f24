@@ -125,6 +125,7 @@ a.social:hover{
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     gap: 20px; /* Space between the images */
     margin: 20px auto;
+    max-width: 800px; /* Adjusts the maximum width of the gallery */
     grid-template-rows: auto auto; /* Makes sure the rows adjust based on content */
     grid-template-areas: 
         "image1 image2"
