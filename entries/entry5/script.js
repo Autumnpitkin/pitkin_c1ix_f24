@@ -14,11 +14,7 @@ const changeCoffeeType = (selected) => {
   coffee_name.innerText = selected.innerText;
 };
 
-const setActiveType = (element) => {
-  element.toggleClass("selected");
-};
-
-[...buttons].forEach((button) => {
+buttons.forEach((button) => {
   button.addEventListener("click", () => {
     changeCoffeeType(button);
   });
