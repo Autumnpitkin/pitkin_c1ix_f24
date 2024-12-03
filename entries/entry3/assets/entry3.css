@@ -43,7 +43,7 @@ video::-webkit-media-controls {
   position: absolute;
   text-align: center;
   line-height: 1;
-  font-size: 60px;
+  font-size: 70px;
   color: rgb(237, 229, 248);
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
@@ -52,11 +52,11 @@ video::-webkit-media-controls {
   
 .overlay-text2{
   position: absolute;
-  top: 55%; 
-  left: 46%; 
+  top: 54%; 
+  left: 44%; 
   text-align: center;
   line-height: 1;
-  font-size: 60px;
+  font-size: 70px;
   color: rgb(237, 229, 248);
   font-family: 'Apple Garamond';
   font-weight: 400;

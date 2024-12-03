@@ -43,7 +43,7 @@ video::-webkit-media-controls {
     position: absolute;
     text-align: center;
     line-height: 1;
-    font-size: 60px;
+    font-size: 70px;
     color: black;
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
@@ -52,8 +52,8 @@ video::-webkit-media-controls {
     
 .overlay-text2{
     position: absolute;
-    top: 58%; 
-    left: 43%; 
+    top: 59%; 
+    left: 42%; 
     text-align: center;
     line-height: 1;
     font-size: 60px;
