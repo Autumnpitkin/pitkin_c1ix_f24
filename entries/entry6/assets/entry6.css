@@ -201,7 +201,7 @@ ul {
   
   .clothing-preview {
     width: 400px; /* Adjust the width as needed */
-    height: auto;
+    height: 400px;
     transition: transform 0.3s ease-in-out; /* Optional: adds a hover effect */
   }
   
