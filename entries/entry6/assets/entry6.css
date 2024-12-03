@@ -120,21 +120,47 @@ a.social:hover{
     font-size: 30px;
     font-style: italic;
 }
-
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     gap: 20px; /* Space between the images */
     margin: 20px auto;
     max-width: 800px; /* Adjusts the maximum width of the gallery */
+    grid-template-rows: auto auto; /* Makes sure the rows adjust based on content */
+    grid-template-areas: 
+        "image1 image2"
+        "image3 image4"
+        "image5 image5"; /* Centers the fifth image at the bottom */
 }
 
 .image-gallery img {
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 500px;
     border: 5px solid rgb(255, 205, 118);
     border-radius: 5px;
     object-fit: cover; /* Ensures images fill the container without distortion */
+}
+
+.image-gallery img:nth-child(1) {
+    grid-area: image1;
+}
+
+.image-gallery img:nth-child(2) {
+    grid-area: image2;
+}
+
+.image-gallery img:nth-child(3) {
+    grid-area: image3;
+}
+
+.image-gallery img:nth-child(4) {
+    grid-area: image4;
+}
+
+.image-gallery img:nth-child(5) {
+    grid-area: image5;
+    width: 80%; /* Optionally adjust the width of the 5th image */
+    margin: 0 auto; /* Centers the image horizontally */
 }
 
     
