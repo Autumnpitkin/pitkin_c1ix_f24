@@ -195,6 +195,21 @@ ul {
     background-color:rgb(255, 205, 118);
   }
 
+  .clothing-link {
+    text-decoration: none; /* Removes the underline from the link */
+  }
+  
+  .clothing-preview {
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Optional: adds a hover effect */
+  }
+  
+  .clothing-preview:hover {
+    transform: scale(1.05); /* Optional: zoom effect on hover */
+  }
+  
+
  /* button{
     margin-top:20%;
   }
