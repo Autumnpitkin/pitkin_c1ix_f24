@@ -937,3 +937,16 @@ tbody td {
   .wheel__indicator::after {
     border-top: var(--indicator-height) solid silver;
   }
+
+.workout-title-container {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color:rgb(23, 101, 114);
+  color: white; 
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px; 
+  font-size: 40px;
+}
