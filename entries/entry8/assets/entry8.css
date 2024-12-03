@@ -950,3 +950,10 @@ tbody td {
   margin-bottom: 20px; 
   font-size: 40px;
 }
+
+.workout-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 40px;
+}
