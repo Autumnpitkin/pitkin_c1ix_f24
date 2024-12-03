@@ -402,20 +402,24 @@ body{
 }
 
 .reset-button {
-  background-color: #e07185; /* pink background */
-  color: white;              /* white text color */
-  border: none;              /* no border */
-  padding: 12px 24px;        /* padding for the button */
-  font-size: 16px;           /* font size */
+  background-color: #e07185; 
+  color: white;            
+  border: none;              
+  padding: 12px 24px;       
+  font-size: 16px;          
   font-family: "Dela Gothic One", sans-serif;
-  border-radius: 8px;        /* rounded corners */
-  cursor: pointer;          /* show pointer cursor when hovering */
-  transition: background-color 0.3s ease; /* smooth transition for background change */
+  border-radius: 8px;       
+  cursor: pointer;         
+  transition: background-color 0.3s ease; 
 }
 
 /* Change the background color when hovering over the button */
 .reset-button:hover {
   background-color: #d0637d; /* darker pink */
+}
+
+.reset-button:focus {
+  outline: none; /* Remove the default outline when focused */
 }
 
 .game-title {
