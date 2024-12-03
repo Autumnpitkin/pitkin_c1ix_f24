@@ -49,6 +49,42 @@
         <p>My ritual of getting coffee at Dunkin' goes beyond simply grabbing a cup of caffeine. It involves small, repetitive steps that form a comforting routine in my day. It begins with the anticipation of the taste and the energy boost, followed by the familiar process of walking into Dunkin', knowing exactly what I am going to order. The sensory experience is part of the ritual too—the smell of brewing coffee, the sound of baristas working, and the hum of the space. The act of receiving my drink, the first sip, and continuing on my day brings a moment of focus and comfort, creating a sense of structure in my morning. The ritual is a calming, predictable routine in a busy life, grounding myself in a moment of familiarity before the rest of the day unfolds.</p>
     </div>
     <br>
+
+    <div class="container">
+      <h2>Customize Your Coffee</h2>
+      <div class="options">
+        <div class="option">
+          <h3>Cup Size</h3>
+          <div class="buttons">
+            <button onclick="selectOption('Cup Size', 'Small')">Small</button>
+            <button onclick="selectOption('Cup Size', 'Medium')">Medium</button>
+            <button onclick="selectOption('Cup Size', 'Large')">Large</button>
+          </div>
+        </div>
+        <div class="option">
+          <h3>Flavor</h3>
+          <div class="buttons">
+            <button onclick="selectOption('Flavor', 'Vanilla')">Vanilla</button>
+            <button onclick="selectOption('Flavor', 'Caramel')">Caramel</button>
+            <button onclick="selectOption('Flavor', 'Hazelnut')">Hazelnut</button>
+          </div>
+        </div>
+        <div class="option">
+          <h3>Milk</h3>
+          <div class="buttons">
+            <button onclick="selectOption('Milk', 'Whole')">Whole</button>
+            <button onclick="selectOption('Milk', 'Skim')">Skim</button>
+            <button onclick="selectOption('Milk', 'Almond')">Almond</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="result">
+      <h3>Your Coffee Selection:</h3>
+      <p id="coffee-selection">No selections yet.</p>
+    </div>
+
     <div class="image-gallery">
         <img src="assets/IMG_1631.JPEG" class="gallery" alt="Outside of Dunkin" />
         <img src="assets/IMG_5409.JPG" class="gallery" alt="Dunkin App" />
@@ -58,33 +94,10 @@
         <img src="assets/IMG_5412.JPG" class="gallery" alt="With Order" />
         <img src="assets/IMG_5410.JPG" class="gallery" alt="With Order 2" />
     </div>
-
-</body>
-</html>
     
-        <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 
-      <script>
-      // Get the button
-      let mybutton = document.getElementById("myBtn");
-      
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
+ <script src="assets/entry5.js"></script>
 
 </body>
 </html>

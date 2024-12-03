@@ -193,4 +193,50 @@ ul {
     background-color:rgb(224, 113, 133);
   }
 
+  * Coffee Customization Section */
+  .container {
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
   
+  .container h2 {
+      font-family: "Dela Gothic One", sans-serif;
+      color: rgb(224, 113, 133);
+      font-size: 36px;
+  }
+  
+  .options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .option h3 {
+      font-size: 20px;
+      color: #000;
+  }
+  
+  .buttons button {
+      background-color: rgb(224, 113, 133);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .buttons button:hover {
+      background-color: rgb(224, 80, 100);
+  }
+  
+  .text-section2 {
+      text-align: center;
+      font-family: "Dela Gothic One", sans-serif;
+      font-size: 50px;
+     
