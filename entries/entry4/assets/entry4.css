@@ -52,7 +52,7 @@ video::-webkit-media-controls {
   
 .overlay-text2{
   position: absolute;
-  top: 55%; 
+  top: 54%; 
   left: 44%; 
   text-align: center;
   line-height: 1;
@@ -287,13 +287,13 @@ section {
   color: rgb(193, 202, 203);
   font-size: 40px;
   flex: 1;
-  padding: 20px;
 }
 
 
 .purple-paragraph p {
   margin-top: 5px;
   line-height: 1.6;
+  font-size: 20px;
   color: rgb(193, 202, 203);
 }
 
@@ -351,7 +351,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 .outfit-title h2 {
   font-size: 40px;
-  color: #333; /* Change the text color if needed */
+  color: rgb(193, 202, 203); /* Change the text color if needed */
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
   font-style: normal;
