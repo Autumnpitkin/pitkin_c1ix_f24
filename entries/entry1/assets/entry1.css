@@ -44,7 +44,7 @@ video::-webkit-media-controls {
   text-align: center;
   line-height: 1;
   font-size: 60px;
-  color: rgb(255, 255, 255);
+  color: rgb(251, 238, 215);
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -57,7 +57,7 @@ video::-webkit-media-controls {
   text-align: center;
   line-height: 1;
   font-size: 60px;
-  color: rgb(255, 255, 255);
+  color: rgb(251, 238, 215);
   font-family: 'Apple Garamond';
   font-weight: 400;
   font-style: italic;
@@ -489,14 +489,14 @@ li a:hover:not(.active) {
 .recipi-item p {
     margin-top: 5px;
     font-size: 30px;
-    color: rgb(75, 56, 105); 
+    color: rgb(251, 238, 215);
     font-family: "Dela Gothic One", sans-serif;
     font-style: normal;
 }
 
 .green-paragraph .recipe-steps {
     list-style-type: decimal; 
-    color: rgb(75, 56, 105); 
+    color: rgb(255 178 43);
     font-family: "Dela Gothic One", sans-serif; 
     margin-left: 20px; 
     margin-top: 20px;
@@ -510,8 +510,8 @@ li a:hover:not(.active) {
 .green-paragraph .recipe-steps .substep {
     margin-left: 20px; 
     margin-top: 5px; 
-    font-size: 0.9em; 
-    color: rgb(75, 56, 105); 
+    font-size: 1.5em; 
+    color: rgb(251, 238, 215);
     display: block; 
 }
 
@@ -541,13 +541,13 @@ li a:hover:not(.active) {
 /* GGreen section */
 .green-section{
   width: 100%;
-  height: 800px;
-  background: rgb(222, 210, 240);;
+  height: 900px;
+  background: rgb(251, 238, 215);
 }
 
 .green-content h1 {
 font-size: 63px;
-color: rgb(75, 56, 105);;
+color: rgb(251, 238, 215);
 font-weight: 700;
 margin-bottom: 4px;
 }
