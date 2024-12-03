@@ -160,6 +160,7 @@ a.social:visited {
   background-color: rgb(193, 202, 203);
 }
 
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -192,7 +193,6 @@ li a:hover:not(.active) {
 .active {
   background-color:rgb(23, 101, 114);
 }
-
 
 ul {
   display: flex;
