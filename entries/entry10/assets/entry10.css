@@ -364,6 +364,7 @@ body{
 
 .items p {
   background-color: #e0e0e0;
+  color: rgb(224, 113, 133);
   padding: 10px;
   margin: 5px 0;
   border-radius: 4px;
@@ -414,7 +415,20 @@ body{
 #reset-button:hover {
   background-color: rgb(208, 86, 108);
 }
-  
+
+.game-title {
+  background-color: rgb(224, 113, 133); /* Light peach background */
+  color: rgb(234, 192, 199); /* Dark text color for contrast */
+  padding: 10px 20px;
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Ensures the background wraps only the text */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
   
   
   
