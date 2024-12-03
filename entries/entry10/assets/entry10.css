@@ -417,8 +417,8 @@ body{
 }
 
 .game-title {
-  color: #e07185; /* Pink text */
-  background-color: #ffe4b5; /* Optional: Light peach background */
+  color: rgb(234, 192, 199); /* Pink text */
+  background-color: rgb(224, 113, 133); /* Optional: Light peach background */
   padding: 10px 20px;
   border-radius: 8px;
   display: inline-block;
