@@ -296,8 +296,7 @@ li a:hover:not(.active) {
   width: 400px;
   height: 500px;
   max-width: 800px;
-  border: 5px solid rgb(255, 205, 118);
-  border-radius: 5px;
+  border: 2px solid rgb(255, 205, 118);
   object-fit: cover; /* Ensures images fill the container without distortion */
 }
 
@@ -466,4 +465,75 @@ li a:hover:not(.active) {
   display: inline-block;
   margin-bottom: 20px;
   font-family: "Dela Gothic One", sans-serif;
+}
+
+  /* Recipe Grid */
+  .recipi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; 
+    margin-top: 20px;
+}
+
+.recipi-item {
+    text-align: center;
+}
+
+.recipi-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.recipi-item p {
+    margin-top: 5px;
+    font-size: 30px;
+    color: rgb(75, 56, 105); 
+    font-family: "Dela Gothic One", sans-serif;
+    font-style: normal;
+}
+
+.green-paragraph .recipe-steps {
+    list-style-type: decimal; 
+    color: rgb(75, 56, 105); 
+    font-family: "Dela Gothic One", sans-serif; 
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+
+.green-paragraph .recipe-steps li {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+}
+
+.green-paragraph .recipe-steps .substep {
+    margin-left: 20px; 
+    margin-top: 5px; 
+    font-size: 0.9em; 
+    color: rgb(75, 56, 105); 
+    display: block; 
+}
+
+.green-section {
+    background-color: rgb(237, 229, 248);
+    padding: 400px 20px; 
+}
+
+.green-section {
+    background-color: rgb(237, 229, 248);
+    padding-top: 10px; 
+}
+
+.green-content {
+    position: relative;
+    top: -10px; 
+}
+
+.green-content h1 {
+    margin-top: 0; 
+}
+
+.green-paragraph {
+    margin-top: 0; 
 }
