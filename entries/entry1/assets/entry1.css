@@ -456,3 +456,15 @@ li a:hover:not(.active) {
     text-align: center;
   }
 
+
+.text-steps {
+  color: rgb(251, 238, 215);
+  background-color: rgb(255, 205, 118);
+  text-align: left; 
+  font-size: 25px; 
+  padding-left: 50px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Dela Gothic One", sans-serif;
+}
+
