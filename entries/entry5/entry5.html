@@ -90,10 +90,46 @@
         <img src="assets/IMG_5412.JPG" class="gallery" alt="With Order" />
         <img src="assets/IMG_5410.JPG" class="gallery" alt="With Order 2" />
     </div>
-    
-<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 
- <script src="assets/entry5.js"></script>
+</body>
+</html>
+    
+        <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+
+      <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      const coffeeName = document.querySelector(".coffee_name");
+const filling = document.querySelector(".filling");
+const buttons = document.querySelectorAll(".options button");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    filling.className = `filling ${button.id}`;
+    coffeeName.textContent = button.textContent;
+  });
+});
+
+      </script>
+      
 
 </body>
 </html>
