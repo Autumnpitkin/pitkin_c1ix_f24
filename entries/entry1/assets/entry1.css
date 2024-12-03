@@ -461,10 +461,9 @@ li a:hover:not(.active) {
   color: rgb(251, 238, 215);
   background-color: rgb(255, 205, 118);
   text-align: left; 
-  font-size: 25px; 
-  padding-left: 50px;
+  font-size: 15px; 
+  padding-left: 80px;
   display: inline-block;
   margin-bottom: 20px;
   font-family: "Dela Gothic One", sans-serif;
 }
-
