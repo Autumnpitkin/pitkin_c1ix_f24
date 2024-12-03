@@ -342,11 +342,6 @@ body,h2,h3,h4,h5,h6,span,b,a,small,div{
 }
 
 /* styles.css */
-body {
-  text-align: center;
-  background-color: #f8f8f8;
-  padding: 20px;
-}
 
 .drag-container {
   display: flex;
