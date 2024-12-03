@@ -240,21 +240,63 @@ ul {
     overflow: hidden;
 }
 
-.filling div {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.5s ease;
-}
-
 .plate {
     width: 230px;
     height: 10px;
     background-color: #ccc;
     border-radius: 50%;
     margin-top: -10px;
+}
+
+.filling {
+    position: relative;
+    width: 100%;
+    height: 0;
+    background-color: transparent;
+}
+
+.filling .coffee {
+    background-color: #3e1f0a; /* Coffee color */
+    height: 40%;
+}
+
+.filling .water {
+    background-color: #b7c4cc; /* Water color */
+    height: 20%;
+}
+
+.filling .liquor {
+    background-color: #a4745e; /* Liquor color */
+    height: 10%;
+}
+
+.filling .milk {
+    background-color: #f1e3e0; /* Milk color */
+    height: 30%;
+}
+
+.filling .whipped_cream {
+    background-color: #f6f6f6; /* Whipped cream color */
+    height: 15%;
+}
+
+.filling .milk_foam {
+    background-color: #e0e0e0; /* Milk foam color */
+    height: 10%;
+}
+
+.filling .steamed_milk {
+    background-color: #f5e3b3; /* Steamed milk color */
+    height: 25%;
+}
+
+.filling .chocolate {
+    background-color: #3e1f0a; /* Chocolate color */
+    height: 15%;
+}
+
+.filling.reset {
+    height: 0; /* Resets the cup filling when reset */
 }
 
 

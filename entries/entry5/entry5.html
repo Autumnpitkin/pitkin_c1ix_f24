@@ -121,10 +121,34 @@
 const filling = document.querySelector(".filling");
 const buttons = document.querySelectorAll(".options button");
 
+// Reset class when clicked
 buttons.forEach(button => {
   button.addEventListener("click", () => {
-    filling.className = `filling ${button.id}`;
+    filling.className = `filling reset`; // Reset previous classes
     coffeeName.textContent = button.textContent;
+
+    // Apply the corresponding filling class based on button clicked
+    if (button.id === "americano") {
+      filling.classList.add("coffee", "water");
+    } else if (button.id === "au_lait") {
+      filling.classList.add("coffee", "milk");
+    } else if (button.id === "capuccino") {
+      filling.classList.add("coffee", "milk_foam");
+    } else if (button.id === "corretto") {
+      filling.classList.add("coffee", "liquor");
+    } else if (button.id === "espresso") {
+      filling.classList.add("coffee");
+    } else if (button.id === "latte") {
+      filling.classList.add("coffee", "milk");
+    } else if (button.id === "lungo") {
+      filling.classList.add("coffee", "water");
+    } else if (button.id === "macchiato") {
+      filling.classList.add("coffee", "milk_foam");
+    } else if (button.id === "mocha") {
+      filling.classList.add("coffee", "chocolate", "milk");
+    } else if (button.id === "ristretto") {
+      filling.classList.add("coffee");
+    }
   });
 });
 
