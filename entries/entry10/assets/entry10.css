@@ -403,7 +403,8 @@ body{
   background-color: #e07185; 
   color: white;            
   border: none;              
-  padding: 12px 24px;       
+  padding: 12px 24px;   
+  margin-left: 790px;    
   font-size: 16px;          
   font-family: "Dela Gothic One", sans-serif;
   border-radius: 8px;       
@@ -422,8 +423,7 @@ body{
 .game-title {
   color: rgb(234, 192, 199); 
   background-color: rgb(224, 113, 133); 
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 10px 300px;
   display: inline-block;
   font-size: 40px;
   font-weight: bold;
