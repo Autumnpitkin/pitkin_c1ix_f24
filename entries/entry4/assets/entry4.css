@@ -52,8 +52,8 @@ video::-webkit-media-controls {
   
 .overlay-text2{
   position: absolute;
-  top: 58%; 
-  left: 43%; 
+  top: 55%; 
+  left: 44%; 
   text-align: center;
   line-height: 1;
   font-size: 60px;
@@ -71,7 +71,7 @@ video::-webkit-media-controls {
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 50px;
+  font-size: 40px;
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -325,4 +325,27 @@ margin-bottom: 20px;
 font-family: "Dela Gothic One", sans-serif;
 text-align: center;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.outfit-title {
+  background-color: rgb(23, 101, 114); /* Choose a background color */
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Adds space between the title and the images */
+}
+
+.outfit-title h2 {
+  font-size: 40px;
+  color: #ffffff; /* Change the text color if needed */
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-items a img {
+  width: 400px; /* Adjust based on your preferred image size */
+  max-width: 400px; /* Set a max width for the images */
+  margin: 10px;
+  display: inline-block;
 }
