@@ -349,3 +349,17 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 10px;
   display: inline-block;
 }
+
+.clothing-link {
+  text-decoration: none; /* Removes the underline from the link */
+}
+
+.clothing-preview {
+  width: 400px; /* Adjust the width as needed */
+  height: 400px;
+  transition: transform 0.3s ease-in-out; /* Optional: adds a hover effect */
+}
+
+.clothing-preview:hover {
+  transform: scale(1.05); 
+}
