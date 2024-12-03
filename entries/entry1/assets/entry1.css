@@ -444,15 +444,15 @@ li a:hover:not(.active) {
     display: none;
   }
 
-.text-title {
-  color: rgb(251, 238, 215);
-  background-color: rgb(255, 205, 118);
-  padding: 20px 300px;
-  display: inline-block;
-  font-size: 50px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  font-family: "Dela Gothic One", sans-serif;
-  text-align: center;
-}
+  .text-title {
+    color: rgb(251, 238, 215);
+    background-color: rgb(255, 205, 118);
+    padding: 20px 300px;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+  }
 
