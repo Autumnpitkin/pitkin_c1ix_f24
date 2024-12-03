@@ -405,6 +405,7 @@ li a:hover:not(.active) {
     max-width: 80vw;
     max-height: 80vh;
     position: relative;
+    align-content: center;
   }
   
   #player {
