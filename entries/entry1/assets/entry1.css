@@ -190,6 +190,7 @@ section {
   margin-top: 5px;
   line-height: 1.6;
   color: rgb(251, 238, 215);
+  font-size: 20px;
 }
 
 .mid-content{
@@ -210,7 +211,7 @@ font-family: "Dela Gothic One", sans-serif;
 .game-title {
 color: rgb(251, 238, 215);
 background-color: rgb(255, 205, 118);
-padding: 10px 20px;
+padding: 10px 300px;
 border-radius: 8px;
 display: inline-block;
 font-size: 40px;
