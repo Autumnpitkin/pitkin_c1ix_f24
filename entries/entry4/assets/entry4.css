@@ -327,29 +327,6 @@ text-align: center;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.outfit-title {
-  background-color: rgb(23, 101, 114); /* Choose a background color */
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 20px; /* Adds space between the title and the images */
-}
-
-.outfit-title h2 {
-  font-size: 40px;
-  color: #ffffff; /* Change the text color if needed */
-  font-family: "Dela Gothic One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.outfit-items a img {
-  width: 400px; /* Adjust based on your preferred image size */
-  max-width: 400px; /* Set a max width for the images */
-  margin: 10px;
-  display: inline-block;
-}
-
 .clothing-link {
   text-decoration: none; /* Removes the underline from the link */
 }
@@ -362,4 +339,27 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 .clothing-preview:hover {
   transform: scale(1.05); 
+}
+
+.outfit-title {
+  background-color: rgb(23, 101, 114); /* Choose a background color */
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Adds space between the title and the images */
+}
+
+.outfit-title h2 {
+  font-size: 40px;
+  color: #333; /* Change the text color if needed */
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-items a img {
+  width: 200px; /* Adjust based on your preferred image size */
+  max-width: 200px; /* Set a max width for the images */
+  margin: 10px;
+  display: inline-block;
 }
